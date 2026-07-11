@@ -1,0 +1,131 @@
+{
+  "Central Railway Station": {
+    "facilities": [
+      "Ramp",
+      "Smooth Pathway",
+      "Accessible Toilet",
+      "Elevator",
+      "Reserved Parking",
+      "Rest Area",
+      "Visual Display Boards",
+      "Written Instructions",
+      "Help Desk",
+      "Emergency Visual Alerts",
+      "Digital Communication Kiosk"
+    ]
+  },
+
+  "Government Medical College": {
+    "facilities": [
+      "Ramp",
+      "Accessible Toilet",
+      "Elevator",
+      "Rest Area",
+      "Reserved Parking",
+      "Help Desk",
+      "Written Instructions",
+      "Visual Display Boards"
+    ]
+  },
+
+  "KSRTC Bus Station": {
+    "facilities": [
+      "Ramp",
+      "Accessible Toilet",
+      "Rest Area",
+      "Help Desk",
+      "Visual Display Boards"
+    ]
+  },
+
+  "Collectorate": {
+    "facilities": [
+      "Ramp",
+      "Smooth Pathway",
+      "Elevator",
+      "Help Desk",
+      "Written Instructions"
+    ]
+  },
+
+  "Taluk Office": {
+    "facilities": [
+      "Ramp",
+      "Help Desk",
+      "Written Instructions"
+    ]
+  },
+
+  "Corporation Office": {
+    "facilities": [
+      "Ramp",
+      "Elevator",
+      "Accessible Toilet",
+      "Help Desk"
+    ]
+  },
+
+  "General Hospital": {
+    "facilities": [
+      "Ramp",
+      "Smooth Pathway",
+      "Accessible Toilet",
+      "Elevator",
+      "Reserved Parking",
+      "Rest Area",
+      "Visual Display Boards",
+      "Written Instructions",
+      "Help Desk",
+      "Emergency Visual Alerts"
+    ]
+  },
+
+  "Ernakulam Junction": {
+    "facilities": [
+      "Ramp",
+      "Smooth Pathway",
+      "Accessible Toilet",
+      "Elevator",
+      "Reserved Parking",
+      "Visual Display Boards",
+      "Written Instructions",
+      "Help Desk"
+    ]
+  },
+
+  "Metro Station": {
+    "facilities": [
+      "Ramp",
+      "Smooth Pathway",
+      "Accessible Toilet",
+      "Elevator",
+      "Reserved Parking",
+      "Rest Area",
+      "Visual Display Boards",
+      "Written Instructions",
+      "Help Desk",
+      "Emergency Visual Alerts",
+      "Digital Communication Kiosk"
+    ]
+  },
+
+  "High Court": {
+    "facilities": [
+      "Ramp",
+      "Elevator",
+      "Accessible Toilet",
+      "Written Instructions",
+      "Help Desk"
+    ]
+  },
+
+  "KSRTC Bus Stand": {
+    "facilities": [
+      "Ramp",
+      "Rest Area",
+      "Reserved Parking",
+      "Visual Display Boards",
+      "Help Desk"
+    ]
+  }
+}
