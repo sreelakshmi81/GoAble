@@ -1,117 +1,157 @@
 *{
 
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Poppins, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 
 }
+
 
 
 body{
 
-    background:#f1f5ff;
+background:#f1f5ff;
 
 }
+
 
 
 .container{
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+min-height:100vh;
 
-    min-height:100vh;
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:20px;
+
+}
+
+
+
+.register-box{
+
+background:white;
+
+width:500px;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.1);
 
 }
 
-
-.form-box{
-
-    background:white;
-
-    width:450px;
-
-    padding:40px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
-
-}
 
 
 h1{
 
-    color:#2563eb;
+color:#2563eb;
 
-    margin-bottom:10px;
+margin-bottom:10px;
 
 }
+
 
 
 p{
 
-    margin-bottom:25px;
+color:#555;
 
-    color:#555;
+margin-bottom:25px;
 
 }
+
 
 
 label{
 
-    display:block;
+display:block;
 
-    margin-top:15px;
+margin-top:15px;
 
-    font-weight:500;
+font-weight:500;
 
 }
+
 
 
 input,
 select{
 
-    width:100%;
 
-    padding:12px;
+width:100%;
 
-    margin-top:8px;
+padding:12px;
 
-    border:1px solid #ccc;
+margin-top:8px;
 
-    border-radius:8px;
+border-radius:8px;
+
+border:1px solid #ccc;
+
 
 }
 
 
-.checkbox label{
 
-    font-weight:400;
+h3{
+
+margin-top:25px;
+
+color:#2563eb;
+
+}
+
+
+
+.disability-options label{
+
+
+font-weight:400;
 
 }
 
 
-.checkbox input{
 
-    width:auto;
+.disability-options input{
 
-    margin-right:8px;
+
+width:auto;
+
+margin-right:8px;
+
 
 }
+
 
 
 
 #dynamicQuestions{
 
-    margin-top:20px;
 
-    padding:15px;
+margin-top:20px;
 
-    background:#eef4ff;
+background:#eef4ff;
 
-    border-radius:10px;
+padding:20px;
+
+border-radius:12px;
+
+
+}
+
+
+
+.question-box{
+
+margin-bottom:20px;
 
 }
 
@@ -119,29 +159,34 @@ select{
 
 button{
 
-    width:100%;
 
-    margin-top:25px;
+width:100%;
 
-    padding:14px;
+padding:15px;
 
-    background:#2563eb;
+margin-top:25px;
 
-    color:white;
+border:none;
 
-    border:none;
+border-radius:30px;
 
-    border-radius:25px;
+background:#2563eb;
 
-    font-size:16px;
+color:white;
 
-    cursor:pointer;
+font-size:16px;
+
+cursor:pointer;
+
 
 }
 
 
+
 button:hover{
 
-    background:#1d4ed8;
+
+background:#1d4ed8;
+
 
 }

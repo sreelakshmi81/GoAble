@@ -1,163 +1,298 @@
-const disabilityCheckboxes =
+const disabilityBoxes =
 document.querySelectorAll(".disability");
 
 
-const questionBox =
+const questionContainer =
 document.getElementById("dynamicQuestions");
 
 
 
-disabilityCheckboxes.forEach(box => {
+disabilityBoxes.forEach(box=>{
 
 
-    box.addEventListener("change", showQuestions);
+box.addEventListener(
+"change",
+generateQuestions
+);
 
 
 });
 
 
 
-function showQuestions(){
 
+function generateQuestions(){
 
-    questionBox.innerHTML="";
 
+questionContainer.innerHTML="";
 
-    let selected=[];
 
 
-    disabilityCheckboxes.forEach(item=>{
+let selected=[];
 
 
-        if(item.checked){
 
-            selected.push(item.value);
+disabilityBoxes.forEach(box=>{
 
-        }
 
+if(box.checked){
 
-    });
+selected.push(box.value);
 
+}
 
 
-    selected.forEach(type=>{
+});
 
 
-        let html="";
 
 
-        if(type==="Mobility Disability"){
+selected.forEach(type=>{
 
 
-            html += `
+let html="";
 
-            <h3>Mobility Questions</h3>
 
-            <label>
-            Do you use wheelchair?
-            </label>
 
-            <select>
-            <option>Yes</option>
-            <option>No</option>
-            </select>
+// MOBILITY QUESTIONS
 
+if(type==="Mobility Disability"){
 
-            <label>
-            Need ramp access?
-            </label>
 
-            <select>
-            <option>Yes</option>
-            <option>No</option>
-            </select>
+html+=`
 
-            `;
+<div class="question-box">
 
+<h3>Mobility Disability Details</h3>
 
-        }
 
+<label>
+Do you use wheelchair?
+</label>
 
+<select id="wheelchair">
 
-        if(type==="Visual Disability"){
+<option>Yes</option>
 
+<option>No</option>
 
-            html += `
+</select>
 
-            <h3>Visual Disability Questions</h3>
 
-            <label>
-            Need audio assistance?
-            </label>
 
-            <select>
 
-            <option>Yes</option>
-            <option>No</option>
+<label>
+Do you use prosthetic support?
+</label>
 
-            </select>
 
-            `;
+<select id="prosthetic">
 
 
-        }
+<option>Yes</option>
 
+<option>No</option>
 
 
-        if(type==="Hearing Disability"){
+</select>
 
 
-            html += `
 
-            <h3>Hearing Disability Questions</h3>
 
-            <label>
-            Need sign language assistance?
-            </label>
+<label>
+Mobility equipment used
+</label>
 
 
-            <select>
+<select id="mobilityEquipment">
 
-            <option>Yes</option>
-            <option>No</option>
 
-            </select>
+<option>Wheelchair</option>
 
-            `;
+<option>Crutches</option>
 
+<option>Walker</option>
 
-        }
+<option>Prosthetic Leg/Arm</option>
 
+<option>Other</option>
 
 
-        if(type==="Prosthetic User"){
+</select>
 
 
-            html += `
 
-            <h3>Prosthetic User Questions</h3>
 
+<label>
+Do you require ramp assistance?
+</label>
 
-            <label>
-            Type of prosthetic support
-            </label>
 
+<select>
 
-            <input 
-            type="text"
-            placeholder="Example: Leg prosthetic">
 
-            `;
+<option>Yes</option>
 
+<option>No</option>
 
-        }
 
+</select>
 
-        questionBox.innerHTML += html;
 
+</div>
 
-    });
+`;
 
+}
+
+
+
+
+
+// HEARING QUESTIONS
+
+if(type==="Hearing Disability"){
+
+
+html+=`
+
+<div class="question-box">
+
+
+<h3>Hearing Disability Details</h3>
+
+
+
+<label>
+Do you use a hearing device?
+</label>
+
+
+<select>
+
+<option>Yes</option>
+
+<option>No</option>
+
+
+</select>
+
+
+
+<label>
+Type of hearing device
+</label>
+
+
+<select>
+
+
+<option>Hearing Aid</option>
+
+<option>Cochlear Implant</option>
+
+<option>Other</option>
+
+
+</select>
+
+
+
+
+<label>
+Need sign language assistance?
+</label>
+
+
+<select>
+
+
+<option>Yes</option>
+
+<option>No</option>
+
+
+</select>
+
+
+</div>
+
+`;
+
+}
+
+
+
+
+
+// SPEECH QUESTIONS
+
+
+if(type==="Speech Disability"){
+
+
+html+=`
+
+<div class="question-box">
+
+
+<h3>Speech Disability Details</h3>
+
+
+
+<label>
+Type of speech difficulty
+</label>
+
+
+<select>
+
+
+<option>Stuttering</option>
+
+<option>Non-verbal / Mute</option>
+
+<option>Difficulty speaking clearly</option>
+
+<option>Other</option>
+
+
+</select>
+
+
+
+
+<label>
+Need communication assistance?
+</label>
+
+
+<select>
+
+
+<option>Yes</option>
+
+<option>No</option>
+
+
+</select>
+
+
+
+</div>
+
+`;
+
+}
+
+
+
+
+questionContainer.innerHTML+=html;
+
+
+
+});
 
 
 }
@@ -166,12 +301,17 @@ function showQuestions(){
 
 
 
+
+
 document
 .getElementById("registerForm")
-.addEventListener("submit",function(e){
+.addEventListener(
+"submit",
+function(event){
 
 
-e.preventDefault();
+
+event.preventDefault();
 
 
 
@@ -198,18 +338,22 @@ phone:
 document.getElementById("phone").value,
 
 
-disability:[]
+disabilities:[]
 
 };
 
 
 
-disabilityCheckboxes.forEach(item=>{
 
 
-if(item.checked){
+disabilityBoxes.forEach(box=>{
 
-user.disability.push(item.value);
+
+if(box.checked){
+
+
+user.disabilities.push(box.value);
+
 
 }
 
@@ -218,18 +362,30 @@ user.disability.push(item.value);
 
 
 
+
+
+
 localStorage.setItem(
+
 "GoAbleUser",
+
 JSON.stringify(user)
+
 );
 
 
 
-alert("Registration successful!");
+
+
+alert(
+"Registration Successful!"
+);
 
 
 
-window.location.href="dashboard.html";
+
+window.location.href=
+"dashboard.html";
 
 
 
