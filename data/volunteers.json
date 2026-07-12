@@ -9,17 +9,9 @@
       "specialization": "Mobility Disability",
       "experience": "4 Years",
       "rating": 4.9,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 2,
       "name": "Anjali Nair",
@@ -29,17 +21,9 @@
       "specialization": "Hearing Disability",
       "experience": "3 Years",
       "rating": 4.8,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English", "Hindi"],
+      "availability": "Available"
     },
-
     {
       "id": 3,
       "name": "Rahul Menon",
@@ -49,17 +33,9 @@
       "specialization": "Speech Disability",
       "experience": "5 Years",
       "rating": 4.7,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 4,
       "name": "Sneha Thomas",
@@ -69,17 +45,9 @@
       "specialization": "Mobility Disability",
       "experience": "2 Years",
       "rating": 4.8,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Busy",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Busy"
     },
-
     {
       "id": 5,
       "name": "Akhil Raj",
@@ -89,17 +57,9 @@
       "specialization": "Hearing Disability",
       "experience": "2 Years",
       "rating": 4.6,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 6,
       "name": "Maria George",
@@ -109,17 +69,9 @@
       "specialization": "Speech Disability",
       "experience": "4 Years",
       "rating": 4.9,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 7,
       "name": "Nikhil Das",
@@ -129,17 +81,9 @@
       "specialization": "Mobility Disability",
       "experience": "3 Years",
       "rating": 4.8,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 8,
       "name": "Arya S",
@@ -149,17 +93,9 @@
       "specialization": "Hearing Disability",
       "experience": "2 Years",
       "rating": 4.7,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 9,
       "name": "Vishnu Kumar",
@@ -169,17 +105,9 @@
       "specialization": "Speech Disability",
       "experience": "6 Years",
       "rating": 4.9,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 10,
       "name": "Aiswarya Pillai",
@@ -189,17 +117,9 @@
       "specialization": "Mobility Disability",
       "experience": "5 Years",
       "rating": 4.8,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 11,
       "name": "Kevin Paul",
@@ -209,17 +129,9 @@
       "specialization": "Hearing Disability",
       "experience": "4 Years",
       "rating": 4.9,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 12,
       "name": "Riya Mathew",
@@ -229,17 +141,9 @@
       "specialization": "Speech Disability",
       "experience": "3 Years",
       "rating": 4.7,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 13,
       "name": "Abin Francis",
@@ -249,17 +153,9 @@
       "specialization": "Mobility Disability",
       "experience": "3 Years",
       "rating": 4.8,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     },
-
     {
       "id": 14,
       "name": "Megha Nair",
@@ -269,15 +165,8 @@
       "specialization": "Hearing Disability",
       "experience": "2 Years",
       "rating": 4.6,
-      "languages": [
-        "Malayalam",
-        "English"
-      ],
-      "availability": "Available",
-      "cities": [
-        "Kochi",
-        "Thiruvananthapuram"
-      ]
+      "languages": ["Malayalam", "English"],
+      "availability": "Available"
     }
   ]
 }
