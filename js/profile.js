@@ -2,44 +2,109 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const user = JSON.parse(localStorage.getItem("GoAbleUser"));
 
-    if(!user){
+    if (!user) {
+        alert("Please login first.");
         window.location.href = "login.html";
         return;
     }
 
+    // Personal Information
     document.getElementById("name").textContent = user.name || "-";
     document.getElementById("email").textContent = user.email || "-";
     document.getElementById("age").textContent = user.age || "-";
     document.getElementById("gender").textContent = user.gender || "-";
-    document.getElementById("medical").textContent = user.medicalCondition || "None";
+    document.getElementById("medical").textContent =
+        user.medicalCondition || "None";
 
-    if(user.disabilities){
-        document.getElementById("disabilities").textContent =
-        user.disabilities.join(", ");
+    // Welcome message
+    document.getElementById("welcomeName").textContent =
+        "Welcome, " + (user.name || "User") + "!";
+
+    // Avatar (first letter of name)
+    const avatar = document.getElementById("avatar");
+
+    if (user.name && user.name.length > 0) {
+        avatar.textContent = user.name.charAt(0).toUpperCase();
+    } else {
+        avatar.textContent = "G";
     }
 
-    const details=document.getElementById("dynamicDetails");
+    // Disability Badges
+    const disabilityContainer = document.getElementById("disabilities");
+    disabilityContainer.innerHTML = "";
 
-    let html="<h3>Disability Details</h3>";
+    if (user.disabilities && user.disabilities.length > 0) {
 
-    if(user.mobilityType){
-        html+=`
-        <p><strong>Mobility:</strong> ${user.mobilityType}</p>
+        user.disabilities.forEach(disability => {
+
+            const badge = document.createElement("span");
+
+            badge.className = "badge";
+
+            badge.textContent = disability;
+
+            disabilityContainer.appendChild(badge);
+
+        });
+
+    } else {
+
+        disabilityContainer.innerHTML =
+            "<span class='badge'>No Disability Selected</span>";
+
+    }
+
+    // Dynamic Disability Details
+    const details = document.getElementById("dynamicDetails");
+
+    let html = "";
+
+    if (user.mobilityType) {
+        html += `
+            <p>
+                <strong>Mobility Support:</strong>
+                ${user.mobilityType}
+            </p>
         `;
     }
 
-    if(user.hearingType){
-        html+=`
-        <p><strong>Hearing:</strong> ${user.hearingType}</p>
+    if (user.hearingType) {
+        html += `
+            <p>
+                <strong>Hearing Support:</strong>
+                ${user.hearingType}
+            </p>
         `;
     }
 
-    if(user.speechType){
-        html+=`
-        <p><strong>Speech:</strong> ${user.speechType}</p>
+    if (user.speechType) {
+        html += `
+            <p>
+                <strong>Speech Condition:</strong>
+                ${user.speechType}
+            </p>
         `;
     }
 
-    details.innerHTML=html;
+    if (user.medicalCondition) {
+        html += `
+            <p>
+                <strong>Medical Condition:</strong>
+                ${user.medicalCondition}
+            </p>
+        `;
+    }
+
+    if (html === "") {
+
+        html = `
+            <p>
+                No additional disability information available.
+            </p>
+        `;
+
+    }
+
+    details.innerHTML = html;
 
 });

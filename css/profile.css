@@ -1,83 +1,236 @@
-body{
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family:'Poppins',sans-serif;
-    background:#f4f7fb;
 }
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* ---------- Header ---------- */
 
 header{
     background:#2563eb;
-    color:white;
-    padding:15px 40px;
+    color:#fff;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding:18px 50px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
 }
 
-header a{
+.logo h2{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
     color:white;
     text-decoration:none;
-    margin-left:20px;
     font-weight:500;
+    transition:.3s;
 }
 
-.container{
-    max-width:900px;
-    margin:40px auto;
+nav a:hover{
+    color:#dbeafe;
 }
+
+/* ---------- Container ---------- */
+
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+/* ---------- Card ---------- */
 
 .profile-card{
     background:white;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
 }
 
-.profile-card h1{
+/* ---------- Top Section ---------- */
+
+.profile-header{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
     text-align:center;
-    color:#2563eb;
-    margin-bottom:30px;
+    padding:45px 20px;
 }
 
-.info{
-    display:grid;
-    grid-template-columns:180px 1fr;
-    row-gap:18px;
-    column-gap:20px;
+.avatar{
+    width:120px;
+    height:120px;
+    margin:auto;
+    border-radius:50%;
+    background:white;
+    color:#2563eb;
+    font-size:50px;
+    font-weight:700;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:5px solid rgba(255,255,255,.4);
+    margin-bottom:20px;
+}
+
+.profile-header h1{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.profile-header p{
+    opacity:.9;
     font-size:16px;
 }
 
-.info label{
+/* ---------- Sections ---------- */
+
+.section{
+    padding:35px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.section:last-child{
+    border-bottom:none;
+}
+
+.section h2{
+    color:#2563eb;
+    margin-bottom:25px;
+    font-size:23px;
+}
+
+/* ---------- Info Grid ---------- */
+
+.info-grid{
+    display:grid;
+    grid-template-columns:220px 1fr;
+    row-gap:18px;
+    column-gap:15px;
+}
+
+.label{
     font-weight:600;
     color:#444;
 }
 
-.info span{
-    color:#666;
+.info-grid div{
+    font-size:16px;
 }
 
-#dynamicDetails{
-    margin-top:30px;
-    padding:20px;
-    background:#eef4ff;
-    border-radius:10px;
+/* ---------- Disability Badges ---------- */
+
+.badge-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
 }
 
-#dynamicDetails h3{
-    color:#2563eb;
-    margin-top:0;
-}
-
-.back-btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:12px 28px;
+.badge{
     background:#2563eb;
     color:white;
+    padding:10px 20px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:600;
+}
+
+/* ---------- Disability Details ---------- */
+
+#dynamicDetails{
+    background:#eef4ff;
+    border-radius:12px;
+    padding:25px;
+    line-height:2;
+    font-size:16px;
+}
+
+/* ---------- Buttons ---------- */
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:35px;
+}
+
+.btn{
+    padding:14px 30px;
+    border-radius:10px;
     text-decoration:none;
-    border-radius:8px;
+    font-size:16px;
+    font-weight:600;
     transition:.3s;
 }
 
-.back-btn:hover{
+.primary{
+    background:#2563eb;
+    color:white;
+}
+
+.primary:hover{
     background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.secondary{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+.secondary:hover{
+    background:#2563eb;
+    color:white;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.info-grid{
+    grid-template-columns:1fr;
+}
+
+.buttons{
+    flex-direction:column;
+}
+
+.btn{
+    text-align:center;
+}
+
+.profile-header h1{
+    font-size:24px;
+}
+
+.avatar{
+    width:100px;
+    height:100px;
+    font-size:40px;
+}
+
 }

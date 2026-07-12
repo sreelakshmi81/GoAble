@@ -1,58 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Profile | GoAble</title>
 
     <link rel="stylesheet" href="css/profile.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <header>
 
-    <h1>My Profile</h1>
+    <div class="logo">
+        <h2>GoAble</h2>
+    </div>
 
-        <div class="info">
+    <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="places.html">Places</a>
+        <a href="volunteer-list.html">Volunteers</a>
+        <a href="index.html">Logout</a>
+    </nav>
 
-            <label>Name</label>
-            <span id="name"></span>
+</header>
 
-            <label>Email</label>
-            <span id="email"></span>
+<div class="container">
 
-            <label>Age</label>
-            <span id="age"></span>
+    <div class="profile-card">
 
-            <label>Gender</label>
-            <span id="gender"></span>
+        <div class="profile-header">
 
-            <label>Medical Condition</label>
-            <span id="medical"></span>
+            <div class="avatar" id="avatar">
+                G
+            </div>
 
-            <label>Disabilities</label>
-            <span id="disabilities"></span>
+            <h1 id="welcomeName">
+                Welcome!
+            </h1>
 
-        
+            <p>
+                Registered GoAble User
+            </p>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Personal Information</h2>
+
+            <div class="info-grid">
+
+                <div class="label">Full Name</div>
+                <div id="name">-</div>
+
+                <div class="label">Email</div>
+                <div id="email">-</div>
+
+                <div class="label">Age</div>
+                <div id="age">-</div>
+
+                <div class="label">Gender</div>
+                <div id="gender">-</div>
+
+                <div class="label">Medical Condition</div>
+                <div id="medical">None</div>
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Registered Disabilities</h2>
+
+            <div id="disabilities" class="badge-container">
+
+                <!-- Badges will appear here -->
+
+            </div>
+
+        </div>
+
+        <div class="section">
+
+            <h2>Disability Details</h2>
+
+            <div id="dynamicDetails">
+
+                <p>No additional details available.</p>
+
+            </div>
+
+        </div>
 
         <div class="buttons">
 
-            <button onclick="location.href='dashboard.html'">
-                Back to Dashboard
-            </button>
+            <a href="dashboard.html" class="btn primary">
+                ← Dashboard
+            </a>
 
-            <button onclick="location.href='register.html'">
-                Edit Profile
-            </button>
+            <a href="volunteer-list.html" class="btn secondary">
+                Volunteers
+            </a>
 
         </div>
 
     </div>
 
-</main>
+</div>
 
 <script src="js/profile.js"></script>
 
 </body>
+
 </html>
