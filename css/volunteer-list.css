@@ -1,0 +1,241 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:#2563eb;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#dbeafe;
+}
+
+/* Main */
+
+.container{
+    max-width:1200px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.container h1{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:10px;
+    font-size:36px;
+}
+
+.container>p{
+    text-align:center;
+    color:#666;
+    margin-bottom:40px;
+}
+
+/* Volunteer Grid */
+
+.volunteer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+/* Card */
+
+.volunteer-card{
+
+    background:white;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+    text-align:center;
+
+}
+
+.volunteer-card:hover{
+
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+/* Avatar */
+
+.avatar{
+
+    width:90px;
+    height:90px;
+
+    margin:auto;
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:#2563eb;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+/* Text */
+
+.volunteer-card h2{
+
+    color:#2563eb;
+    margin-bottom:15px;
+
+}
+
+.volunteer-card p{
+
+    margin:8px 0;
+    color:#555;
+    font-size:15px;
+
+}
+
+.rating{
+
+    color:#f59e0b;
+    font-weight:600;
+
+}
+
+/* Buttons */
+
+.button-group{
+
+    margin-top:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.profile-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:13px;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.profile-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.request-btn{
+
+    background:#16a34a;
+
+    color:white;
+
+    border:none;
+
+    padding:13px;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.request-btn:hover{
+
+    background:#15803d;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+    justify-content:center;
+
+}
+
+.container h1{
+
+    font-size:30px;
+
+}
+
+}
