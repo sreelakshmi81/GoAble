@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    background:#f1f5f9;
+    color:#333;
+
+}
+
+
+
+header{
+
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:45px 20px;
+
+}
+
+
+header h1{
+
+    font-size:38px;
+    margin-bottom:10px;
+
+}
+
+
+
+header p{
+
+    font-size:18px;
+
+}
+
+
+
+
+.about-container{
+
+    width:85%;
+    margin:40px auto;
+
+}
+
+
+
+.about-card{
+
+    background:white;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:15px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,0.1);
+
+}
+
+
+
+h2{
+
+    color:#2563eb;
+    margin-bottom:20px;
+    text-align:center;
+
+}
+
+
+
+.about-card p{
+
+    line-height:1.8;
+    font-size:17px;
+
+}
+
+
+
+.steps{
+
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.step{
+
+    flex:1;
+    min-width:220px;
+
+    background:#eff6ff;
+    padding:20px;
+    border-radius:12px;
+
+}
+
+
+
+.step h3{
+
+    color:#1d4ed8;
+    margin-bottom:10px;
+
+}
+
+
+
+
+ul{
+
+    padding-left:25px;
+
+}
+
+
+
+li{
+
+    margin:12px 0;
+    font-size:17px;
+
+}
+
+
+
+
+
+.team-container{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.member{
+
+    width:260px;
+    background:#eff6ff;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+
+    border-top:5px solid #2563eb;
+
+}
+
+
+
+.member h3{
+
+    color:#1d4ed8;
+    margin-bottom:15px;
+
+}
+
+
+
+.college{
+
+    text-align:center;
+    margin-top:30px;
+
+}
+
+
+
+footer{
+
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:20px;
+
+}
