@@ -169,3 +169,21 @@ justify-content:center;
 }
 
 }
+
+.profile-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:50px;
+    background:#0f62fe;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.profile-btn:hover{
+    background:#0043ce;
+    transform:translateY(-3px);
+}
