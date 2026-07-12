@@ -1,236 +1,78 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
+/* ===========================
+   Volunteer Request History
+=========================== */
 
-body{
-    background:#f4f7fb;
-    color:#333;
-}
-
-/* ---------- Header ---------- */
-
-header{
-    background:#2563eb;
-    color:#fff;
+#volunteerHistory{
     display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 50px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+    flex-direction:column;
+    gap:18px;
+    margin-top:15px;
 }
 
-.logo h2{
-    font-size:28px;
-    font-weight:700;
-}
-
-nav{
-    display:flex;
-    gap:25px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:500;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#dbeafe;
-}
-
-/* ---------- Container ---------- */
-
-.container{
-    max-width:1000px;
-    margin:40px auto;
-    padding:20px;
-}
-
-/* ---------- Card ---------- */
-
-.profile-card{
-    background:white;
-    border-radius:18px;
-    overflow:hidden;
-    box-shadow:0 12px 30px rgba(0,0,0,.12);
-}
-
-/* ---------- Top Section ---------- */
-
-.profile-header{
-    background:linear-gradient(135deg,#2563eb,#1d4ed8);
-    color:white;
-    text-align:center;
-    padding:45px 20px;
-}
-
-.avatar{
-    width:120px;
-    height:120px;
-    margin:auto;
-    border-radius:50%;
-    background:white;
-    color:#2563eb;
-    font-size:50px;
-    font-weight:700;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border:5px solid rgba(255,255,255,.4);
-    margin-bottom:20px;
-}
-
-.profile-header h1{
-    font-size:30px;
-    margin-bottom:8px;
-}
-
-.profile-header p{
-    opacity:.9;
-    font-size:16px;
-}
-
-/* ---------- Sections ---------- */
-
-.section{
-    padding:35px;
-    border-bottom:1px solid #e5e7eb;
-}
-
-.section:last-child{
-    border-bottom:none;
-}
-
-.section h2{
-    color:#2563eb;
-    margin-bottom:25px;
-    font-size:23px;
-}
-
-/* ---------- Info Grid ---------- */
-
-.info-grid{
-    display:grid;
-    grid-template-columns:220px 1fr;
-    row-gap:18px;
-    column-gap:15px;
-}
-
-.label{
-    font-weight:600;
-    color:#444;
-}
-
-.info-grid div{
-    font-size:16px;
-}
-
-/* ---------- Disability Badges ---------- */
-
-.badge-container{
-    display:flex;
-    flex-wrap:wrap;
-    gap:15px;
-}
-
-.badge{
-    background:#2563eb;
-    color:white;
-    padding:10px 20px;
-    border-radius:30px;
-    font-size:15px;
-    font-weight:600;
-}
-
-/* ---------- Disability Details ---------- */
-
-#dynamicDetails{
-    background:#eef4ff;
+.history-card{
+    background:#ffffff;
+    border-left:6px solid #2563eb;
     border-radius:12px;
-    padding:25px;
-    line-height:2;
-    font-size:16px;
-}
-
-/* ---------- Buttons ---------- */
-
-.buttons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    padding:35px;
-}
-
-.btn{
-    padding:14px 30px;
-    border-radius:10px;
-    text-decoration:none;
-    font-size:16px;
-    font-weight:600;
+    padding:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
     transition:.3s;
 }
 
-.primary{
-    background:#2563eb;
-    color:white;
+.history-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
 }
 
-.primary:hover{
-    background:#1d4ed8;
-    transform:translateY(-2px);
-}
-
-.secondary{
-    background:white;
+.history-card h3{
     color:#2563eb;
-    border:2px solid #2563eb;
+    margin-bottom:10px;
+    font-size:20px;
 }
 
-.secondary:hover{
-    background:#2563eb;
-    color:white;
+.history-card p{
+    margin:6px 0;
+    color:#555;
+    font-size:15px;
 }
 
-/* ---------- Responsive ---------- */
+.status{
+    display:inline-block;
+    margin-top:10px;
+    padding:6px 14px;
+    border-radius:20px;
+    background:#dcfce7;
+    color:#15803d;
+    font-size:14px;
+    font-weight:600;
+}
+
+.request-date{
+    color:#777;
+    font-size:14px;
+    margin-top:8px;
+}
+
+/* Empty History */
+
+.empty-history{
+    text-align:center;
+    padding:35px;
+    background:#f8fafc;
+    border-radius:12px;
+    color:#666;
+    border:2px dashed #cbd5e1;
+}
+
+/* Responsive */
 
 @media(max-width:768px){
 
-header{
-    flex-direction:column;
-    gap:15px;
-    padding:20px;
+.history-card{
+    padding:18px;
 }
 
-nav{
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
-.info-grid{
-    grid-template-columns:1fr;
-}
-
-.buttons{
-    flex-direction:column;
-}
-
-.btn{
-    text-align:center;
-}
-
-.profile-header h1{
-    font-size:24px;
-}
-
-.avatar{
-    width:100px;
-    height:100px;
-    font-size:40px;
+.history-card h3{
+    font-size:18px;
 }
 
 }
